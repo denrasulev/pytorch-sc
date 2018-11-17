@@ -4,5 +4,5 @@
 import numpy as np
 
 
-def softmax(L):
-    return([np.exp(n) / sum([np.exp(i) for i in L]) for n in L])
+def softmax1(L):
+    return np.exp(L) / np.sum(np.exp(L), axis=0)
