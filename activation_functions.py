@@ -35,7 +35,7 @@ def ReLU(x):
 # Avoids vanishing gradient
 # Only use for the hidden layers!
 # ReLU could result in dead neurons (then use Leaked ReLU)
-# Output - Use SoftMax for Multi Class
-# Output - Use Linear function for regression
+# Output - Use SoftMax (or Sigmoid) for Multi Class
+# Output - Use Linear (or ReLU) function for regression
 # More implementations:
 # https://stackoverflow.com/questions/32109319/how-to-implement-the-relu-function-in-numpy

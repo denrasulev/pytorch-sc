@@ -1,3 +1,4 @@
 # ignore PDF files
 *.pdf
-
+*.jpg
+*.png
