@@ -1,8 +1,14 @@
-# Write a function that takes as input a list of numbers, and returns
-# the list of values given by the softmax function.
+# SoftMax function
 
+import torch
 import numpy as np
 
 
-def softmax1(L):
-    return np.exp(L) / np.sum(np.exp(L), axis=0)
+# SoftmMax in NumPy
+def softmax1(x):
+    return np.exp(x) / np.sum(np.exp(x), axis=0)
+
+
+# SoftMax in PyTorch
+def softmax(x):
+    return torch.exp(x) / torch.sum(torch.exp(x))
